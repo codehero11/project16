@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project16</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sara's World</h1>
+    </header>
+    
+    <main>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Shop')">Shop</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        </div>
+
+        <div id="Home" class="tabcontent">
+            <h2>Home</h2>
+            <p>Welcome to Sara's World!
+
+                Hello and welcome to my website!
+                This is where creativity meets innovation. Whether you're here to explore my projects, shop for unique products, or just learn more about me, I’m thrilled to have you.
+                
+                In this space, I share my passion for web development, tech insights, and the journey I’m on as I build and create. You'll also find updates on my latest work, a glimpse into my personal projects, and a gallery showcasing some of the things that inspire me.
+                
+                Thank you for visiting, and I hope you find something that sparks your interest. Feel free to explore, and don't hesitate to get in touch if you have any questions or just want to say hi!</p>
+
+            <!-- Inner Tabs in Home Section -->
+            <div class="inner-tabs">
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Overview')">Overview</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Updates')">Updates</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Gallery')">Gallery</button>
+            </div>
+
+            <div id="Overview" class="inner-tabcontent">
+                <h3>Overview</h3>
+                <p>Welcome to the E-Commerce Hub of Sara's World!
+
+                    At Sara's World, we’re redefining the online shopping experience. Our e-commerce platform is built with the customer in mind, offering a seamless and intuitive interface to browse, shop, and enjoy a wide range of products. From the latest tech gadgets to stylish fashion accessories, our collection is curated to bring you the best in quality and design.
+                    
+                    We believe in providing not just products, but an experience. Our platform is designed to be user-friendly, secure, and efficient, ensuring that your shopping journey is smooth from start to finish. Explore our categories, discover exclusive offers, and enjoy the convenience of shopping from the comfort of your home.
+                    
+                    Join us in this exciting journey as we continue to expand our offerings and bring you the latest and greatest in online retail. Thank you for choosing Sara's World as your shopping destination!
+                    
+                    </p>
+            </div>
+
+            <div id="Updates" class="inner-tabcontent">
+                <h3>Updates</h3>
+                <p>Exciting News and Announcements
+                    At Sara's World, we’re always working to enhance your experience. Check this section regularly for updates on new product launches, special promotions, and feature enhancements. We’re committed to bringing you the latest and most exciting developments in the world of e-commerce.
+                    
+                    What’s New?
+                    
+                    New Arrivals: Discover the newest additions to our product catalog. From innovative gadgets to trendy fashion, we’re constantly updating our inventory to bring you the best.
+                    Special Offers: Keep an eye out for exclusive deals and discounts. We frequently update our offers to ensure you get the best value. <br>
+                    Feature Updates: We’re always improving our platform. Get the scoop on new features and enhancements designed to make your shopping experience even better.
+                    Your Feedback Matters
+                    We value your input and encourage you to share your thoughts. If you have suggestions or feedback on how we can improve, please let us know. Your satisfaction is our top priority!</p>
+            </div>
+
+            <div id="Gallery" class="inner-tabcontent">
+                <h3>Gallery</h3>
+                <p>Beauty Plus</p>
+                <img src="products.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="Shop" class="tabcontent">
+            <h2>Shop</h2>
+            <p>Explore our products in the Shop section.</p>
+
+            <!-- Inner Tabs in Shop Section -->
+            <div class="inner-tabs">
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Products')">Products</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Categories')">Categories</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Offers')">Offers</button>
+            </div>
+
+            <div id="Products" class="inner-tabcontent">
+                <h3>Products</h3>
+                <p>Check out our latest products.</p>
+            </div>
+
+            <div id="Categories" class="inner-tabcontent">
+                <h3>Categories</h3>
+                <p>Browse products by category.</p>
+            </div>
+
+            <div id="Offers" class="inner-tabcontent">
+                <h3>Offers</h3>
+                <p>See the best deals and offers.</p>
+            </div>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h2>Contact</h2>
+            <p>Get in touch with us in the Contact section.</p>
+
+            <!-- Inner Tabs in Contact Section -->
+            <div class="inner-tabs">
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Form')">Form</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Location')">Location</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Social')">Social Media</button>
+            </div>
+
+            <div id="Form" class="inner-tabcontent">
+                <h3>Form</h3>
+                <p>Fill out the contact form here.</p>
+            </div>
+
+            <div id="Location" class="inner-tabcontent">
+                <h3>Location</h3>
+                <p>Find our location here.</p>
+            </div>
+
+            <div id="Social" class="inner-tabcontent">
+                <h3>Social Media</h3>
+                <p>Connect with us on social media.</p>
+            </div>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h2>About</h2>
+            <p>Learn more about us in the About section.</p>
+
+            <!-- Inner Tabs in About Section -->
+            <div class="inner-tabs">
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Mission')">Mission</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'Team')">Team</button>
+                <button class="inner-tablinks" onclick="openInnerTab(event, 'History')">History</button>
+            </div>
+
+            <div id="Mission" class="inner-tabcontent">
+                <h3>Mission</h3>
+                <p>Our mission is to...</p>
+            </div>
+
+            <div id="Team" class="inner-tabcontent">
+                <h3>Team</h3>
+                <p>Meet our team.</p>
+            </div>
+
+            <div id="History" class="inner-tabcontent">
+                <h3>History</h3>
+                <p>Learn about our history.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sara's World.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

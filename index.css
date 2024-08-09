@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #541071a5; /* Green background */
+    color: rgb(1, 2, 8);              /* White text color */
+    text-align: center;        /* Center the text */
+    padding: 20px 0;           /* Padding for spacing */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;    /* Dark grey background */
+    color: white;              /* White text color */
+    text-align: center;        /* Center the text */
+    padding: 10px 0;           /* Padding for spacing */
+    margin-top: auto;          /* Push footer to the bottom */
+    font-size: 0.9rem;         /* Slightly smaller text size */
+}
+
+/* Basic link styling in the footer */
+footer a {
+    color: white;              /* White text color for links */
+    text-decoration: none;     /* Remove underline from links */
+    margin: 0 10px;            /* Spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style the tab buttons */
+.tabs {
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tablinks, .inner-tablinks {
+    background-color: #4e2586;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.tablinks:hover, .inner-tablinks:hover {
+    background-color: #5b5bd9e2;
+}
+
+.tablinks.active, .inner-tablinks.active {
+    background-color: #333;
+}
+
+/* Style the tab content */
+.tabcontent, .inner-tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Add styles for login form */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container .login-button:hover {
+    background-color: #45a049;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
